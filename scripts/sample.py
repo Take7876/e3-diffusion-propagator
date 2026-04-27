@@ -4,6 +4,10 @@ import argparse
 
 import torch
 
+from _bootstrap import add_project_src_to_path
+
+add_project_src_to_path()
+
 from diffusion_models.config import load_config
 from diffusion_models.data.argon_dataset import ArgonTrajectoryDataset, collate_argon_samples
 from diffusion_models.models import DiffusionPropagator

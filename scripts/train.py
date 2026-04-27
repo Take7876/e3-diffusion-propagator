@@ -3,6 +3,10 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
+from _bootstrap import add_project_src_to_path
+
+add_project_src_to_path()
+
 from diffusion_models.config import load_config
 from diffusion_models.data import build_dataloaders
 from diffusion_models.models import DiffusionPropagator

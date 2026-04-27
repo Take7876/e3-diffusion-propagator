@@ -3,6 +3,10 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
+from _bootstrap import add_project_src_to_path
+
+add_project_src_to_path()
+
 import numpy as np
 import torch
 

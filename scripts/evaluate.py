@@ -4,6 +4,10 @@ import argparse
 import csv
 from pathlib import Path
 
+from _bootstrap import add_project_src_to_path
+
+add_project_src_to_path()
+
 import torch
 from torch.utils.data import DataLoader, Subset
 from tqdm import tqdm
